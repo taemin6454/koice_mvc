@@ -23,7 +23,7 @@ public class MainController {
 		Map<String, Object> params = new HashMap<String, Object>();
 		
 		
-		Map<String, Object> paramsMap = loginService.selLoginUser(params);
+		//Map<String, Object> paramsMap = loginService.selLoginUser(params);
 		//System.out.println(paramsMap);
 		view.setViewName("index");
 		
@@ -37,7 +37,7 @@ public class MainController {
 		Map<String, Object> params = new HashMap<String, Object>();
 		
 		
-		Map<String, Object> paramsMap = loginService.selLoginUser(params);
+		//Map<String, Object> paramsMap = loginService.selLoginUser(params);
 		//System.out.println(paramsMap);
 		view.setViewName("about");
 		
@@ -51,7 +51,7 @@ public class MainController {
 		Map<String, Object> params = new HashMap<String, Object>();
 		
 		
-		Map<String, Object> paramsMap = loginService.selLoginUser(params);
+		//Map<String, Object> paramsMap = loginService.selLoginUser(params);
 		//System.out.println(paramsMap);
 		view.setViewName("service");
 		
@@ -65,7 +65,7 @@ public class MainController {
 		Map<String, Object> params = new HashMap<String, Object>();
 		
 		
-		Map<String, Object> paramsMap = loginService.selLoginUser(params);
+		//Map<String, Object> paramsMap = loginService.selLoginUser(params);
 		//System.out.println(paramsMap);
 		view.setViewName("notice");
 		
@@ -79,7 +79,7 @@ public class MainController {
 		Map<String, Object> params = new HashMap<String, Object>();
 		
 		
-		Map<String, Object> paramsMap = loginService.selLoginUser(params);
+		//Map<String, Object> paramsMap = loginService.selLoginUser(params);
 		//System.out.println(paramsMap);
 		view.setViewName("login");
 		

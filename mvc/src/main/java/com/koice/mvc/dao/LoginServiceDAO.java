@@ -2,14 +2,18 @@ package com.koice.mvc.dao;
 
 import java.util.Map;
 
-import org.apache.ibatis.annotations.Select;
-import org.springframework.stereotype.Repository;
+import org.apache.ibatis.annotations.Mapper;
 
-@Repository
+//@Repository
 //@Mapper
 public interface LoginServiceDAO {
+	/*
+	@Autowired
+	private SqlSessionTemplate sqlSession;
 	
-	@Select("select * from USERS")
-	public Map<String, Object> selLoginUser(Map<String, Object> params);
-	
+	public Map<String, Object> selLoginUser(Map<String, Object> params) {
+		return sqlSession.selectOne("loginServiceDAO.selLoginUser", params);
+	}
+	*/
+	Map<String, Object> selLoginUser(Map<String, Object> params);
 }

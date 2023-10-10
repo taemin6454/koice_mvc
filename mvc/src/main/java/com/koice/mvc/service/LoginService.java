@@ -2,13 +2,17 @@ package com.koice.mvc.service;
 
 import java.util.Map;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.koice.mvc.dao.LoginServiceDAO;
 
+import jakarta.annotation.Resource;
+
 @Service
 public class LoginService {
+	
+	//@Resource
+	//LoginServiceDAO loginServiceDAO;
 	
 	/*
 	private final LoginServiceDAO loginServiceDAO;
