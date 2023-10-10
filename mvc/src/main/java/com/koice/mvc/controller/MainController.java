@@ -4,19 +4,21 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.koice.mvc.service.LoginService;
 
-@RestController
+@Controller
 public class MainController {
 	
 	@Autowired
 	LoginService loginService;
 	
 	@RequestMapping(value = "/") 
+	@ResponseBody
     public ModelAndView main(){ 
 		ModelAndView view = new ModelAndView();
 		
@@ -31,6 +33,7 @@ public class MainController {
     } 
 	
 	@RequestMapping(value = "/about") 
+	@ResponseBody
     public ModelAndView about(){ 
 		ModelAndView view = new ModelAndView();
 		
@@ -45,6 +48,7 @@ public class MainController {
     } 
 	
 	@RequestMapping(value = "/service") 
+	@ResponseBody
     public ModelAndView service(){ 
 		ModelAndView view = new ModelAndView();
 		
@@ -59,6 +63,7 @@ public class MainController {
     } 
 	
 	@RequestMapping(value = "/notice") 
+	@ResponseBody
     public ModelAndView notice(){ 
 		ModelAndView view = new ModelAndView();
 		
@@ -73,6 +78,7 @@ public class MainController {
     } 
 	
 	@RequestMapping(value = "/login") 
+	@ResponseBody
     public ModelAndView login(){ 
 		ModelAndView view = new ModelAndView();
 		

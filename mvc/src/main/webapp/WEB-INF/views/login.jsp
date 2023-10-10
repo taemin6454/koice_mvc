@@ -80,14 +80,13 @@
                                     <h2 class="text-black">안녕하세요 KOICE:코이스입니다.</h2>
                                     <p class="text-black"> * 컨설턴트 서비스 이용을 위해 로그인을 해주세요</p>
                                 </div>
-                                <input class="mt-4" type="text" name="u" placeholder="ID" required="required" />
-                                <input type="password" name="p" placeholder="PW" required="required" />
+                                <input class="mt-4" id="user_nm" type="text" name="u" placeholder="ID" required="required" />
+                                <input type="password" id="user_pw" name="p" placeholder="PW" required="required" />
                                 <div class="mb-4 mt-3 login_pages">
-                                    <a href="#">아이디 찾기</a> |
-                                    <a href="#">비밀번호 찾기</a> |
-                                    <a href="#">회원가입</a>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#id_modal">아이디 찾기</a> |
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#pw_modal">비밀번호 찾기</a>
                                 </div>
-                                <button type="submit" class="btn btn-block btn-large login_btn">LOGIN</button>
+                                <button onclick="fnLogin()" type="button" class="btn btn-block btn-large login_btn">LOGIN</button>
                                 <div class="text-center mt-5" style="margin-right: 20px;">
                                     <img src="/static/img/icon/koice 2koice.png" class="mt-5" style="width:150px" >
                                 </div>
@@ -121,7 +120,131 @@
             </div>
         </div>
     </div>
+    
+    <!-- Modal -->
+	<div class="modal fade" id="id_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title text-black" id="exampleModalLabel">아이디 찾기</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <input class="" id="user_mail_id" type="text" name="u" placeholder="이메일" required="required" />
+			<input type="password" id="user_num_id" name="p" placeholder="사번" required="required" />
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary" onclick="fnIDsel()">아이디 찾기</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<div class="modal fade" id="pw_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title text-black" id="exampleModalLabel">비밀번호 찾기</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	      	<input class="" id="userID_m" type="text" name="u" placeholder="아이디" required="required" />
+	        <input class="" id="user_mail_pw" type="text" name="u" placeholder="이메일" required="required" />
+			<input type="password" id="user_num_pw" name="p" placeholder="사번" required="required" />
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary" onclick="fnPWsel()">비밀번호 찾기</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 </div>
+
+
 </body>
+
+<script type="text/javascript">
+	function fnLogin() {
+		var user_nm = $('#user_nm').val();
+		var user_pw = $('#user_pw').val();
+		
+		if(user_nm == null || user_nm == "") {
+			alert("아이디를 입력해주세요!!");
+			return false;
+		}
+		
+		if(user_pw == null || user_pw == "") {
+			alert("비밀번호를 입력해주세요!!");
+			return false;
+		}
+		
+		if(user_nm != "koicePro_name" || user_pw != "qwer1234!") {
+			alert("등록되지 않은 회원입니다!");
+			return false;
+		}
+	}
+	
+	function fnIDsel() {
+		var user_mail = $('#user_mail_id').val();
+		var user_num = $('#user_num_id').val();
+		
+		if(user_mail == null || user_mail == "") {
+			alert("이메일을 입력해주세요!!");
+			return false;
+		}
+		
+		if(user_num == null || user_num == "") {
+			alert("사번을 입력해주세요!!");
+			return false;
+		}
+		
+		if(user_mail != "koicePro_name" || user_num != "qwer1234!") {
+			alert("등록되지 않은 회원입니다!");
+			return false;
+		}
+	}
+	
+	function fnPWsel() {
+		var user_mail = $('#user_mail_pw').val();
+		var user_num = $('#user_num_pw').val();
+		var userID_m = $('#userID_m').val();
+		
+		if(userID_m == null || userID_m == "") {
+			alert("아이디를 입력해주세요!!");
+			return false;
+		}
+		
+		if(user_mail == null || user_mail == "") {
+			alert("이메일을 입력해주세요!!");
+			return false;
+		}
+		
+		if(user_num == null || user_num == "") {
+			alert("사번을 입력해주세요!!");
+			return false;
+		}
+		
+		if(user_mail != "koicePro_name" || user_num != "qwer1234!") {
+			alert("등록되지 않은 회원입니다!");
+			return false;
+		}
+	}
+	
+	var id_modal = document.getElementById('id_modal')
+	id_modal.addEventListener('hide.bs.modal', function (event) {
+		$('#user_mail_id').val("");
+		$('#user_num_id').val("");
+	})
+	
+	var pw_modal = document.getElementById('pw_modal')
+	pw_modal.addEventListener('hide.bs.modal', function (event) {
+		$('#user_mail_pw').val("");
+		$('#user_num_pw').val("");
+		$('#userID_m').val("");
+	})
+	
+</script>
 
 </html>
