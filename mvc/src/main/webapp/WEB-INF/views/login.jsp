@@ -125,17 +125,16 @@
 	<div class="modal fade" id="id_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	  <div class="modal-dialog modal-md modal-dialog-centered">
 	    <div class="modal-content">
-	      <div class="modal-header" style="background: #86A8E7;">
+	      <div class="modal-header" style="background: #111133;">
 	        <h5 class="modal-title" id="exampleModalLabel">아이디 찾기</h5>
-	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
 	      </div>
 	      <div class="modal-body">
 	        <input class="" id="user_mail_id" type="text" name="u" placeholder="이메일" required="required" />
 			<input type="password" id="user_num_id" name="p" placeholder="사번" required="required" />
 	      </div>
 	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-	        <button type="button" class="btn btn-primary" onclick="fnIDsel()">아이디 찾기</button>
+	        <button type="button" class="btn btn-primary" onclick="fnIDsel()" style="background:#111133;font-size: 18px;padding: 10px;">아이디 찾기</button>
 	      </div>
 	    </div>
 	  </div>
@@ -144,9 +143,9 @@
 	<div class="modal fade" id="pw_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	  <div class="modal-dialog modal-md modal-dialog-centered">
 	    <div class="modal-content">
-	      <div class="modal-header" style="background: #86A8E7;">
+	      <div class="modal-header" style="background: #111133;">
 	        <h5 class="modal-title" id="exampleModalLabel">비밀번호 찾기</h5>
-	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
 	      </div>
 	      <div class="modal-body">
 	      	<input class="" id="userID_m" type="text" name="u" placeholder="아이디" required="required" />
@@ -154,8 +153,7 @@
 			<input type="password" id="user_num_pw" name="p" placeholder="사번" required="required" />
 	      </div>
 	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-	        <button type="button" class="btn btn-primary" onclick="fnPWsel()">비밀번호 찾기</button>
+	        <button type="button" class="btn btn-primary" onclick="fnPWsel()" style="background:#111133;font-size: 18px;padding: 10px;">비밀번호 찾기</button>
 	      </div>
 	    </div>
 	  </div>
