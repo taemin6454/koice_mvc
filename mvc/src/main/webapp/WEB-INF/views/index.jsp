@@ -44,17 +44,17 @@
     <div class="col-12">
         <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="./index.html" class="logo">
+            <a href="/" class="logo">
                 <img src="/static/img/icon/koice 40koice.png" style="width: 200px; height: 50px;" />
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-                <li class="scroll-to-section"><a href="./about.html">기관소개</a></li>
-                <li class="scroll-to-section"><a href="./service.html">교육 프로그램 소개</a></li>
+                <li class="scroll-to-section"><a href="/about">기관소개</a></li>
+                <li class="scroll-to-section"><a href="/service">교육 프로그램 소개</a></li>
                 <!-- <li class="scroll-to-section"><a href="./404.html">교육후기</a></li> -->
-                <li class="scroll-to-section"><a href="./notice.html">공지</a></li>
-                <li class="scroll-to-section"><a href="./login.html">컨설턴트 전용서비스</a></li>
+                <li class="scroll-to-section"><a href="/notice">공지</a></li>
+                <li class="scroll-to-section"><a href="/login">컨설턴트 전용서비스</a></li>
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>

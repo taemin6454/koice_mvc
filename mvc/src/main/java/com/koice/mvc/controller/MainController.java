@@ -24,8 +24,64 @@ public class MainController {
 		
 		
 		Map<String, Object> paramsMap = loginService.selLoginUser(params);
-		System.out.println(paramsMap);
+		//System.out.println(paramsMap);
 		view.setViewName("index");
+		
+        return view; 
+    } 
+	
+	@RequestMapping(value = "/about") 
+    public ModelAndView about(){ 
+		ModelAndView view = new ModelAndView();
+		
+		Map<String, Object> params = new HashMap<String, Object>();
+		
+		
+		Map<String, Object> paramsMap = loginService.selLoginUser(params);
+		//System.out.println(paramsMap);
+		view.setViewName("about");
+		
+        return view; 
+    } 
+	
+	@RequestMapping(value = "/service") 
+    public ModelAndView service(){ 
+		ModelAndView view = new ModelAndView();
+		
+		Map<String, Object> params = new HashMap<String, Object>();
+		
+		
+		Map<String, Object> paramsMap = loginService.selLoginUser(params);
+		//System.out.println(paramsMap);
+		view.setViewName("service");
+		
+        return view; 
+    } 
+	
+	@RequestMapping(value = "/notice") 
+    public ModelAndView notice(){ 
+		ModelAndView view = new ModelAndView();
+		
+		Map<String, Object> params = new HashMap<String, Object>();
+		
+		
+		Map<String, Object> paramsMap = loginService.selLoginUser(params);
+		//System.out.println(paramsMap);
+		view.setViewName("notice");
+		
+        return view; 
+    } 
+	
+	@RequestMapping(value = "/login") 
+    public ModelAndView login(){ 
+		ModelAndView view = new ModelAndView();
+		
+		Map<String, Object> params = new HashMap<String, Object>();
+		
+		
+		Map<String, Object> paramsMap = loginService.selLoginUser(params);
+		//System.out.println(paramsMap);
+		view.setViewName("login");
 		
         return view; 
     } 
