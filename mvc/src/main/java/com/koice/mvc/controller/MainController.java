@@ -24,13 +24,6 @@ public class MainController {
 		
 		Map<String, Object> params = new HashMap<String, Object>();
 		
-		try {
-			Map<String, Object> paramsMap = loginService.selLoginUser(params);
-			System.out.println("paramMap :::: " + paramsMap);
-		} catch(Exception e) {
-			e.printStackTrace();
-		}
-		
 		//System.out.println(paramsMap);
 		view.setViewName("index");
 		
@@ -89,9 +82,13 @@ public class MainController {
 		
 		Map<String, Object> params = new HashMap<String, Object>();
 		
+		try {
+			Map<String, Object> paramsMap = loginService.selLoginUser(params);
+			System.out.println("paramMap :::: " + paramsMap);
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
 		
-		//Map<String, Object> paramsMap = loginService.selLoginUser(params);
-		//System.out.println(paramsMap);
 		view.setViewName("login");
 		
         return view; 
