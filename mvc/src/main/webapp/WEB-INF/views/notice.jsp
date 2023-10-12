@@ -35,7 +35,7 @@
     
     <link rel="stylesheet" href="/static/css/index.css">
     <link rel="stylesheet" href="/static/css/notice.css">
-
+	<script src="/static/js/notice.js"></script>
 </head>
 
 <body>

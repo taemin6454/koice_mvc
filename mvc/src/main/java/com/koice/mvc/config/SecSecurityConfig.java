@@ -10,11 +10,17 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
 
 @Configuration
 @EnableWebSecurity
 public class SecSecurityConfig {
-
+	
+	@Bean
+    public MappingJackson2JsonView jsonView(){
+        return new MappingJackson2JsonView();
+    }
+	
     @Bean
     public InMemoryUserDetailsManager userDetailsService() {
         UserDetails user1 = User.withUsername("user1")
@@ -36,9 +42,8 @@ public class SecSecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.formLogin()
         .loginPage("/login");
+        http.csrf().disable();
         
-        
-    	
     	return http.build();
     }
     
