@@ -12,7 +12,7 @@ import jakarta.annotation.Resource;
 @Service
 public class LoginService {
 	
-	//@Autowired
+	@Autowired
 	LoginServiceDAO loginServiceDAO;
 	
 	/*
@@ -23,8 +23,8 @@ public class LoginService {
 	}
 	*/
 	
-	public Map<String, Object> selLoginUser(Map<String, Object> params) {
-		//return loginServiceDAO.selLoginUser(params);
-		return null;
+	public Map<String, Object> selLoginUser(Map<String, Object> params) throws Exception {
+		return loginServiceDAO.selLoginUser(params);
+		//return null;
 	}
 }

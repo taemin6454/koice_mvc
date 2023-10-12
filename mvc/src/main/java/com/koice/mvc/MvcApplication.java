@@ -10,7 +10,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 @SpringBootApplication
 @EnableAutoConfiguration
 @SpringBootConfiguration
-//@MapperScan(value= {"com.koice.mvc.dao"})
+@MapperScan(value= {"com.koice.mvc.dao"})
 public class MvcApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {

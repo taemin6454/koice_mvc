@@ -11,8 +11,7 @@
 			, USERNAME
 			, USER_PW 
 			, ROLE 
-			, ROLE_ID
-			, CREATE_AT 
+			, ROLE_ID 
 		FROM
 			USERS
 		WHERE 1=1

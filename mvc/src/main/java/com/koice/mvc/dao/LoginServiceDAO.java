@@ -3,9 +3,10 @@ package com.koice.mvc.dao;
 import java.util.Map;
 
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
-//@Repository
-//@Mapper
+@Repository
+@Mapper
 public interface LoginServiceDAO {
 	/*
 	@Autowired
@@ -15,5 +16,5 @@ public interface LoginServiceDAO {
 		return sqlSession.selectOne("loginServiceDAO.selLoginUser", params);
 	}
 	*/
-	Map<String, Object> selLoginUser(Map<String, Object> params);
+	Map<String, Object> selLoginUser(Map<String, Object> params) throws Exception;
 }
