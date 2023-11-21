@@ -79,7 +79,7 @@ public class MainControllerImpl implements MainController{
 		    String action = (String)session.getAttribute("action");
 		    session.removeAttribute("action");
 		    
-		    mav.setViewName("index");
+		    mav.setViewName("dashboard");
 		} else {
 			   mav.addObject("result", "fail");
 			   mav.setViewName("login");

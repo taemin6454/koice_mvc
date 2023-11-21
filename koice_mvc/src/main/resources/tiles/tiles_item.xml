@@ -4,10 +4,19 @@
        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
        
 <tiles-definitions>
-
-	<definition name="/itemsList.do" extends="baseLayout">
-		<put-attribute name="title" value="쇼핑몰 메인페이지" />
+	
+	<!-- 컨설턴트 전용서비스 패아지 -->
+	
+	<definition name="baseLayout2"
+		template="/WEB-INF/views/common/layout_dashboard.jsp">
+		<put-attribute name="title" value="레이아웃 페이지" />
+		<put-attribute name="header" value="/WEB-INF/views/common/header_dashboard.jsp" />
 		<put-attribute name="body" value="" />
+	</definition>
+	
+	<definition name="dashboard" extends="baseLayout2">
+		<put-attribute name="title" value="코이스:KOICE - 컨설턴트 전용 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/dashboard.jsp" />
 	</definition>
 	
 </tiles-definitions>

@@ -10,37 +10,38 @@
 		<put-attribute name="title" value="레이아웃 페이지" />
 		<put-attribute name="header" value="/WEB-INF/views/common/header.jsp" />
 		<put-attribute name="body" value="" />
-
 	</definition>
 	
 	<definition name="/" extends="baseLayout">
-		<put-attribute name="title" value="코이스" />
+		<put-attribute name="title" value="코이스:KOICE" />
 		<put-attribute name="body" value="/WEB-INF/views/index.jsp" />
 	</definition>
 	
 	<definition name="index" extends="baseLayout">
-		<put-attribute name="title" value="코이스 메인페이지" />
+		<put-attribute name="title" value="코이스:KOICE - 메인페이지" />
 		<put-attribute name="body" value="/WEB-INF/views/index.jsp" />
 	</definition>
 	
 	<definition name="about" extends="baseLayout">
-		<put-attribute name="title" value="코이스 기관소개" />
+		<put-attribute name="title" value="코이스:KOICE - 기관소개" />
 		<put-attribute name="body" value="/WEB-INF/views/about.jsp" />
 	</definition>
 	
 	<definition name="login" extends="baseLayout">
-		<put-attribute name="title" value="코이스 로그인" />
+		<put-attribute name="title" value="코이스:KOICE - 로그인" />
 		<put-attribute name="body" value="/WEB-INF/views/login.jsp" />
 	</definition>
 	
 	<definition name="notice" extends="baseLayout">
-		<put-attribute name="title" value="코이스 게시판" />
+		<put-attribute name="title" value="코이스:KOICE - 게시판" />
 		<put-attribute name="body" value="/WEB-INF/views/notice.jsp" />
 	</definition>
 	
 	<definition name="service" extends="baseLayout">
-		<put-attribute name="title" value="코이스 교육프로그램소개 " />
+		<put-attribute name="title" value="코이스:KOICE - 교육프로그램소개 " />
 		<put-attribute name="body" value="/WEB-INF/views/service.jsp" />
 	</definition>
+	
+	
 	
 </tiles-definitions>
