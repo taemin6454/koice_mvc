@@ -1,5 +1,5 @@
 $( document ).ready( function() {
-	fnNoticeList()
+	//fnNoticeList()
 });
 
 function fnNoticeList() {

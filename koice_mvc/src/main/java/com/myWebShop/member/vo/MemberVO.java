@@ -4,6 +4,7 @@ import org.springframework.stereotype.Component;
 
 @Component("memberVO")
 public class MemberVO {
+	private String id;
 	private String member_id;
 	private String member_pw;
 	private String member_name;
@@ -27,8 +28,17 @@ public class MemberVO {
 	private String jibunAddress;
 	private String namujiAddress;
 	private String joinDate;
+	private String roleID;
+	private String role_nm;
 	private String del_yn;
+	private String created_at;
 	
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
 	public String getMember_id() {
 		return member_id;
 	}
@@ -173,8 +183,23 @@ public class MemberVO {
 	public void setDel_yn(String del_yn) {
 		this.del_yn = del_yn;
 	}
-	
-	
-	
+	public String getRoleID() {
+		return roleID;
+	}
+	public void setRoleID(String roleID) {
+		this.roleID = roleID;
+	}
+	public String getRole_nm() {
+		return role_nm;
+	}
+	public void setRole_nm(String role_nm) {
+		this.role_nm = role_nm;
+	}
+	public String getCreated_at() {
+		return created_at;
+	}
+	public void setCreated_at(String created_at) {
+		this.created_at = created_at;
+	}
 }
 

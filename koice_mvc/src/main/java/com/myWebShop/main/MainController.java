@@ -14,6 +14,4 @@ public interface MainController {
 	public ModelAndView login(MemberVO member, RedirectAttributes rAttr, HttpServletRequest request,
 			HttpServletResponse response) throws Exception;
 
-	public ResponseEntity addMember(MemberVO member, HttpServletRequest request, HttpServletResponse response) throws Exception;
-
 }

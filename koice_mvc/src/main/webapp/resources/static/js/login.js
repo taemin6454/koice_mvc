@@ -1,10 +1,10 @@
-var id_modal = document.getElementById('id_modal')
+var id_modal = document.getElementById('id_modal');
 id_modal.addEventListener('hide.bs.modal', function (event) {
 	$('#user_mail_id').val("");
 	$('#user_num_id').val("");
 })
 
-var pw_modal = document.getElementById('pw_modal')
+var pw_modal = document.getElementById('pw_modal');
 pw_modal.addEventListener('hide.bs.modal', function (event) {
 	$('#user_mail_pw').val("");
 	$('#user_num_pw').val("");
@@ -16,23 +16,22 @@ $( document ).ready( function() {
 });
 
 function fnLogin() {
-	var user_nm = $('#user_nm').val();
-	var user_pw = $('#user_pw').val();
+	var member_id = $('#member_id').val();
+	var member_pw = $('#member_pw').val();
 	
-	if(user_nm == null || user_nm == "") {
+	if(member_id == null || member_id == "") {
 		alert("아이디를 입력해주세요!!");
 		return false;
 	}
 	
-	if(user_pw == null || user_pw == "") {
+	if(member_pw == null || member_pw == "") {
 		alert("비밀번호를 입력해주세요!!");
 		return false;
 	}
 	
-	if(user_nm != "koicePro_name" || user_pw != "qwer1234!") {
-		alert("등록되지 않은 회원입니다!");
-		return false;
-	}
+	document.login.action = "/login_form.do";
+	document.login.target = "";
+	document.login.submit();
 }
 
 function fnIDsel() {

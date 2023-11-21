@@ -5,6 +5,7 @@
 	
 <mapper namespace="mapper.member">
 	<resultMap type="memberVO" id="resultMem">
+		<result property="id" column="id" />
 		<result property="member_id" column="member_id" />
 		<result property="member_pw" column="member_pw" />
 		<result property="member_name" column="member_name" />
@@ -32,61 +33,43 @@
 		<result property="jibunAddress" column="jibunAddress" />
 		<result property="namujiAddress" column="namujiAddress" />
 		<result property="joinDate" column="joinDate" />
+		
+		<result property="roleID" column="roleID" />
+		<result property="role_nm" column="role_nm" />
+		<result property="created_at" column="created_at" />
 	</resultMap>
 	
 	<select id="login" resultType="memberVO" parameterType="memberVO">
 		<![CDATA[
-		select * from USERS 
+			select
+				id 
+				,user_id as member_id
+				,username as member_name
+				,user_pw as member_pw
+				,role_id as roleID
+				,role as role_nm
+				,created_at
+			from USERS
 		]]>
+		where user_id = #{member_id}
+		  and user_pw = #{member_pw}
 	</select>
 	
 	<insert id="addMember" parameterType="memberVO">
-		insert into t_shopping_member(
-			member_id,
-			member_pw,
-			member_name,
-			member_gender,
-			member_birth_y,
-			member_birth_m,
-			member_birth_d,
-			member_birth_gn,
-			tel1,
-			tel2,
-			tel3,
-			hp1,
-			hp2,
-			hp3,
-			smssts_yn,
-			email1,
-			email2,
-			emailsts_yn,
-			zipcode,
-			roadAddress,
-			jibunAddress,
-			namujiAddress
+		insert into USERS(
+			user_id
+			,username
+			,user_pw
+			,role_id
+			,role
+			,created_at
 		)values(
 			#{member_id},
-			#{member_pw},
 			#{member_name},
-			#{member_gender},
-			#{member_birth_y},
-			#{member_birth_m},
-			#{member_birth_d},
-			#{member_birth_gn},
-			#{tel1},
-			#{tel2},
-			#{tel3},
-			#{hp1},
-			#{hp2},
-			#{hp3},
-			#{smssts_yn},
-			#{email1},
-			#{email2},
-			#{emailsts_yn},
-			#{zipcode},
-			#{roadAddress},
-			#{jibunAddress},
-			#{namujiAddress}
+			#{member_pw},
+			#{roleID},
+			#{role_nm},
+			NOW()
 		)
 	</insert>
 </mapper>
