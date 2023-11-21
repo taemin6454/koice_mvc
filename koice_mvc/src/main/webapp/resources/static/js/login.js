@@ -12,10 +12,11 @@ pw_modal.addEventListener('hide.bs.modal', function (event) {
 })
 
 $( document ).ready( function() {
-    
+	
 });
 
 function fnLogin() {
+	var params = {};
 	var member_id = $('#member_id').val();
 	var member_pw = $('#member_pw').val();
 	
@@ -28,10 +29,6 @@ function fnLogin() {
 		alert("비밀번호를 입력해주세요!!");
 		return false;
 	}
-	
-	document.login.action = "/login_form.do";
-	document.login.target = "";
-	document.login.submit();
 }
 
 function fnIDsel() {
