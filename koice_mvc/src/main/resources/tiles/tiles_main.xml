@@ -42,6 +42,24 @@
 		<put-attribute name="body" value="/WEB-INF/views/service.jsp" />
 	</definition>
 	
+	<definition name="notice_detail_No1272" extends="baseLayout">
+		<put-attribute name="title" value="코이스:KOICE - 게시판 상세" />
+		<put-attribute name="body" value="/WEB-INF/views/notice_detail_No1272.jsp" />
+	</definition>
 	
+	<definition name="notice_detail_No1285" extends="baseLayout">
+		<put-attribute name="title" value="코이스:KOICE - 게시판 상세" />
+		<put-attribute name="body" value="/WEB-INF/views/notice_detail_No1285.jsp" />
+	</definition>
+	
+	<definition name="notice_detail_No1286" extends="baseLayout">
+		<put-attribute name="title" value="코이스:KOICE - 게시판 상세" />
+		<put-attribute name="body" value="/WEB-INF/views/notice_detail_No1286.jsp" />
+	</definition>
+	
+	<definition name="notice_detail_No1287" extends="baseLayout">
+		<put-attribute name="title" value="코이스:KOICE - 게시판 상세" />
+		<put-attribute name="body" value="/WEB-INF/views/notice_detail_No1287.jsp" />
+	</definition>
 	
 </tiles-definitions>

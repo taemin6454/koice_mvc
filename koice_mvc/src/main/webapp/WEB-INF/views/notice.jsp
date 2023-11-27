@@ -40,58 +40,51 @@
                                 <col width="*" />
                             </colgroup>
                             <tr>
-                                <th rowspan="2">1</th>
-                                <td colspan="2" class="border-0 text-start ps-3 fw-bold pb-0"><a href="/login" class="text-black" style="cursor: pointer;">채용공고<br/> [CJ Logitics]Global SCM 컨설턴트 경력사원 모집</a></td>
+                                <th rowspan="2">1287</th>
+                                <td colspan="2" class="border-0 text-start ps-3 fw-bold pb-0"><a href="/notice_detail_No1287.do" class="text-black" style="cursor: pointer;">채용공고<br/> [PSI컨설팅]교육과정개발 HRD컨설턴트 모집</a></td>
                             </tr>
                             <tr>
-                                <td colspan="2" class="h-25 text-start ps-3 fw-light pt-0 pb-4">등록일 2023-09-14</td>
+                                <td colspan="2" class="h-25 text-start ps-3 fw-light pt-0 pb-4">등록일 2023-11-02</td>
                             </tr>
                             <tr>
-                                <th rowspan="2">2</th>
-                                <td colspan="2" class="border-0 text-start ps-3 fw-bold pb-0"><a href="/login" class="text-black" style="cursor: pointer;">채용공고<br/> [SHINSEGAE I&C]SAP CO 모듈 컨설턴트(운영/개발) 부문 인재 모집</a></td>
+                                <th rowspan="2">1286</th>
+                                <td colspan="2" class="border-0 text-start ps-3 fw-bold pb-0"><a href="/notice_detail_No1286.do" class="text-black" style="cursor: pointer;">채용공고<br/> [FLOURISH]대입입시 컨설턴트 모집</a></td>
                             </tr>
                             <tr>
-                                <td colspan="2" class="h-25 text-start ps-3 fw-light pt-0 pb-4">등록일 2023-09-13 </td>
+                                <td colspan="2" class="h-25 text-start ps-3 fw-light pt-0 pb-4">등록일 2023-10-31</td>
                             </tr>
                             <tr>
-                                <th rowspan="2">3</th>
-                                <td colspan="2" class="border-0 text-start ps-3 fw-bold pb-0"><a href="/login" class="text-black" style="cursor: pointer;">공지사항<br/> 2023년 KOICE 청년취업페스타 개최</a></td>
+                                <th rowspan="2">1285</th>
+                                <td colspan="2" class="border-0 text-start ps-3 fw-bold pb-0"><a href="/notice_detail_No1285.do" class="text-black" style="cursor: pointer;">채용공고<br/> [CJ Logitics]Global SCM 컨설턴트 경력사원 모집</a></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="h-25 text-start ps-3 fw-light pt-0 pb-4">등록일 2023-09-14 </td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2">1272</th>
+                                <td colspan="2" class="border-0 text-start ps-3 fw-bold pb-0"><a href="/notice_detail_No1272.do" class="text-black" style="cursor: pointer;">대외홍보<br/> 2023년 KOICE 청년취업페스타 개최</a></td>
                             </tr>
                             <tr>
                                 <td colspan="2" class="h-25 text-start ps-3 fw-light pt-0 pb-4">등록일 2023-08-31</td>
                             </tr>
                             <tr>
-                                <th rowspan="2">4</th>
-                                <td colspan="2" class="border-0 text-start ps-3 fw-bold pb-0"><a href="/login" class="text-black" style="cursor: pointer;">공지사항<br/> 대학생 대상 '언더커버' 세미나 개최</a></td>
+                                <th rowspan="2">1266</th>
+                                <td colspan="2" class="border-0 text-start ps-3 fw-bold pb-0"><a href="/login.do" class="text-black" style="cursor: pointer;">공지사항<br/> 교육평가원 심사 대상 목록</a></td>
                             </tr>
                             <tr>
                                 <td colspan="2" class="h-25 text-start ps-3 fw-light pt-0 pb-4">등록일 2023-07-01</td>
                             </tr>
                             <tr>
-                                <th rowspan="2">5</th>
-                                <td colspan="2" class="border-0 text-start ps-3 fw-bold pb-0"><a href="/login" class="text-black" style="cursor: pointer;">공지사항<br/> 2분기 서비스 컨설턴트 배치 현황</a></td>
+                                <th rowspan="2">1265</th>
+                                <td colspan="2" class="border-0 text-start ps-3 fw-bold pb-0"><a href="/login.do" class="text-black" style="cursor: pointer;">공지사항<br/> 2분기 컨설턴트 배치 현황</a></td>
                             </tr>
                             <tr>
                                 <td colspan="2" class="h-25 text-start ps-3 fw-light pt-0 pb-4">등록일 2023-05-11</td>
                             </tr>
                         </table>
-                        <div class="d-flex flex-column align-items-center">
-                            <nav aria-label="..." class="mt-5">
-                                <ul class="pagination">
-                                <li class="page-item disabled">
-                                    <a class="page-link" href="/login" tabindex="-1">Previous</a>
-                                </li>
-                                <li class="page-item active"><a href="/login" class="page-link">1</a></li>
-                                <li class="page-item"><a href="/login" class="page-link">2</a></li>
-                                <li class="page-item"><a href="/login" class="page-link">3</a></li>
-                                <li class="page-item"><a href="/login" class="page-link">4</a></li>
-                                <li class="page-item"><a href="/login" class="page-link">5</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="/login">Next</a>
-                                </li>
-                                </ul>
-                            </nav>
-                        </div>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-secondary btn-lg" type="button">더보기</button>
+                          </div>
                     </div>
                 </div>
             </div>
