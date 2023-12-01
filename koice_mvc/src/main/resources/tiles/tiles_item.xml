@@ -12,6 +12,7 @@
 		<put-attribute name="title" value="레이아웃 페이지" />
 		<put-attribute name="header" value="/WEB-INF/views/common/header_dashboard.jsp" />
 		<put-attribute name="body" value="" />
+		<put-attribute name="left_menu" value="/WEB-INF/views/common/leftSite_dashboard.jsp" />
 	</definition>
 	
 	<definition name="dashboard" extends="baseLayout2">

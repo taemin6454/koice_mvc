@@ -23,25 +23,34 @@
     <meta name="naver-site-verification" content="fe1cf9ac84992b1360347357dc6ff9d3ec7677bf" />
     <meta name="google-site-verification" content="7fnLDtIrnvPnCMmqRW93YdKCdUHXhyVObj9G1OS0-dw" />
     <!-- Favicon -->
-    <link href="${contextPath}/resources/static/img/icon/koice 38koice.png" rel="icon">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">  
-    <link href="${contextPath}/resources/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <script src="${contextPath}/resources/static/bootstrap/js/bootstrap.min.js"></script>
-    <script src="${contextPath}/resources/static/jquery/jquery.js"></script>
-    <script src="${contextPath}/resources/static/js/main.js"></script>
-    <link rel="stylesheet" type="text/css" href="${contextPath}/resources/static/fullpage/fullpage.css" />
-
-    <link rel="stylesheet" href="${contextPath}/resources/static/css/fontawesome.css">
-    <link rel="stylesheet" href="${contextPath}/resources/static/css/main.css">
-    <link rel="stylesheet" href="${contextPath}/resources/static/css/owl.css">
-    <link rel="stylesheet" href="${contextPath}/resources/static/css/animate.css">
-    <link rel="stylesheet" href="${contextPath}/resources/static/css/swiper-bundle.min.css">
+	<link href="${contextPath}/resources/static/img/icon/koice 38koice.png" rel="icon">
 	
-	<link rel="stylesheet" href="${contextPath}/resources/static/css/index.css">
+    <!-- Custom styles for this template-->
+    <link href="${contextPath}/resources/static/css/dashboard.css" rel="stylesheet">
 </head>
-<body>
-	<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-		<tiles:insertAttribute name="header" />
-	</header>
-	<tiles:insertAttribute name="body" />		
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    	<tiles:insertAttribute name="left_menu" />
+    
+    	<div class="body-wrapper">
+            <!-- Main Content -->
+            <header class="app-header">
+				<tiles:insertAttribute name="header" />
+			</header>
+			<div class="container-fluid">
+				<tiles:insertAttribute name="body" />
+			</div>
+		</div>	
+	</div>	
+	
+	<script src="${contextPath}/resources/static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="${contextPath}/resources/static/jquery/jquery.js"></script>
+	<script src="${contextPath}/resources/static/js/sidebarmenu.js"></script>
+	<script src="${contextPath}/resources/static/js/app.min.js"></script>
+	<script src="${contextPath}/resources/static/js/apexcharts.js"></script>
+	<script src="${contextPath}/resources/static/js/simplebar.js"></script>
+	<script src="${contextPath}/resources/static/js/dashboard.js"></script>
 </body> 
