@@ -14,7 +14,7 @@
 		<div>
 		  <div class="brand-logo d-flex align-items-center justify-content-between">
 		    <a href="/dashboard.do" class="text-nowrap logo-img">
-		      <img src="${contextPath}/resources/static/img/icon/koice 4koice.png" width="180" alt="" />
+		      <img src="${contextPath}/resources/static/img/icon/koice 3koice.png" width="180" alt="" />
 		    </a>
 		    <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
 		      <i class="ti ti-x fs-8"></i>
@@ -40,7 +40,7 @@
 		       <span class="hide-menu">프로그램 관라</span>
 		     </li>
 		     <li class="sidebar-item">
-		       <a class="sidebar-link" href="#" aria-expanded="false">
+		       <a class="sidebar-link" href="javascript:void(0)" aria-expanded="false">
 		         <span>
 		           <i class="ti ti-article"></i>
 		         </span>
@@ -48,7 +48,7 @@
 		       </a>
 		     </li>
 		     <li class="sidebar-item">
-		       <a class="sidebar-link" href="#" aria-expanded="false">
+		       <a class="sidebar-link" href="javascript:void(0)" aria-expanded="false">
 		         <span>
 		           <i class="ti ti-alert-circle"></i>
 		         </span>
@@ -56,7 +56,7 @@
 		       </a>
 		     </li>
 		     <li class="sidebar-item">
-		       <a class="sidebar-link" href="#" aria-expanded="false">
+		       <a class="sidebar-link" href="javascript:void(0)" aria-expanded="false">
 		         <span>
 		           <i class="ti ti-cards"></i>
 		         </span>
@@ -64,59 +64,59 @@
 		       </a>
 		     </li>
 		     <li class="sidebar-item">
-		       <a class="sidebar-link" href="#" aria-expanded="false">
+		       <a class="sidebar-link" href="javascript:void(0)" aria-expanded="false">
 		         <span>
 		           <i class="ti ti-file-description"></i>
 		         </span>
-		         <span class="hide-menu">자료</span>
+		         <span class="hide-menu">첨부자료</span>
 		       </a>
 		     </li>
 		     <li class="sidebar-item">
-		       <a class="sidebar-link" href="#" aria-expanded="false">
+		       <a class="sidebar-link" href="javascript:void(0)" aria-expanded="false">
 		         <span>
 		           <i class="ti ti-typography"></i>
 		         </span>
-		         <span class="hide-menu">Typography</span>
+		         <span class="hide-menu">평가지표</span>
 		       </a>
 		     </li>
 		     <li class="nav-small-cap">
 		       <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-		       <span class="hide-menu">AUTH</span>
+		       <span class="hide-menu">빅데이터 분석</span>
 		     </li>
 		     <li class="sidebar-item">
-		       <a class="sidebar-link" href="#" aria-expanded="false">
+		       <a class="sidebar-link" href="javascript:void(0)" aria-expanded="false">
 		         <span>
-		           <i class="ti ti-login"></i>
+		           <i class="ti ti-align-box-bottom-center"></i>
 		         </span>
-		         <span class="hide-menu">Login</span>
+		         <span class="hide-menu">차트 분석</span>
 		       </a>
 		     </li>
 		     <li class="sidebar-item">
-		       <a class="sidebar-link" href="#" aria-expanded="false">
+		       <a class="sidebar-link" href="javascript:void(0)" aria-expanded="false">
 		         <span>
-		           <i class="ti ti-user-plus"></i>
+		           <i class="ti ti-adjustments"></i>
 		         </span>
-		         <span class="hide-menu">Register</span>
+		         <span class="hide-menu">트랜드 분석</span>
 		       </a>
 		     </li>
 		     <li class="nav-small-cap">
 		       <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-		       <span class="hide-menu">EXTRA</span>
+		       <span class="hide-menu">사용자 관리</span>
 		     </li>
 		     <li class="sidebar-item">
-		       <a class="sidebar-link" href="#" aria-expanded="false">
+		       <a class="sidebar-link" href="javascript:void(0)" aria-expanded="false">
 		         <span>
-		           <i class="ti ti-mood-happy"></i>
+		           <i class="ti ti-user"></i>
 		         </span>
-		         <span class="hide-menu">Icons</span>
+		         <span class="hide-menu">학생관리</span>
 		       </a>
 		     </li>
 		     <li class="sidebar-item">
-		       <a class="sidebar-link" href="#" aria-expanded="false">
+		       <a class="sidebar-link" href="javascript:void(0)" aria-expanded="false">
 		         <span>
-		           <i class="ti ti-aperture"></i>
+		           <i class="ti ti-seeding"></i>
 		         </span>
-		         <span class="hide-menu">Sample Page</span>
+		         <span class="hide-menu">과제관리</span>
 		       </a>
 		     </li>
 		   </ul>
